@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GameING</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+      integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="img/logotipo.png" />
+      <label
+        ><img src="iconos/magnifying-glass-solid.svg" /><input
+          type="search"
+          name="search"
+          id="search"
+          class="search"
+          placeholder="search"
+      /></label>
+      <div class="sesion">
+        <button onclick="mostrarDiv()" class="signin">
+          Sign in<img src="iconos/user-solid.svg" />
+        </button>
+
+        <div id="mi-div" class="mi-div">
+          <h1>Inicio de sesion</h1>
+
+          <form method="post">
+            <div class="Username">
+              <img src="iconos/circle-user-solid.svg">
+              <input type="text" required />
+              <label>Nombre de usuario</label>
+            </div>
+
+            <div class="Username">
+              <img src="iconos/key-solid.svg">
+              <input type="password" required />
+              <label>Contraseña</label>
+            </div>
+
+            <div class="forgotten">¿Olvidó su contraseña?</div>
+
+            <input class="submit" type="submit" value="Iniciar sesion" />
+
+            <div class="RegisterBox">
+              <label class="Register">Registrarse</label>
+            </div>
+          </form>
+        </div>
+      </div>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#parte1">Reseñas</a></li>
+        <li><a href="#parte2">Noticias</a></li>
+        <li><a href="#parte3">Comunidad</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section class="parte1" id="parte1">
+        <h2>Reseñas</h2>
+        <div class="review">
+          <article>
+            <img class="reviewImg" src="img/Crab.jpeg" />
+            <h4 class="reviewContent">
+              Juegos así son los que hacen que Game Pass tenga sentido. He
+              pasado más de 20 horas jugando a Another Crab's Treasure y es más
+              que un Dark Souls con un cangrejo
+            </h4>
+            <p class="Game">ANOTHER CRAB'S TREASURE</p>
+            <ul class="subText">
+              <li>Hace 17 dias</li>
+              <li>Bruno Ouviña</li>
+              <li>4 comentarios</li>
+            </ul>
+          </article>
+          <article>
+            <img class="reviewImg" src="img/dogma.jpeg" />
+            <h4 class="reviewContent">
+              Tras jugar 60 horas es difícil que encuentres un RPG de fantasía y
+              mundo abierto tan único como este. Análisis de Dragon's Dogma 2
+            </h4>
+            <p class="Game">DRAGON'S DOGMA 2</p>
+            <ul class="subText">
+              <li>Hace 2 meses</li>
+              <li>Alejandro Pascual</li>
+              <li>34 comentarios</li>
+            </ul>
+          </article>
+          <article>
+            <img class="reviewImg" src="img/prince.jpeg" />
+            <h4 class="reviewContent">
+              Análisis de Prince of Persia The Lost Crown. Si lo dejas pasar te
+              estarás perdiendo uno de los mejores (y más difíciles) juegos de
+              acción de los últimos años
+            </h4>
+            <p class="Game">ANPRINCE OF PERSIA: THE LOST CROWN</p>
+            <ul class="subText">
+              <li>Hace 5 meses</li>
+              <li>Jesús Bella</li>
+              <li>64 comentarios</li>
+            </ul>
+          </article>
+          <article>
+            <img class="reviewImg" src="img/ready.jpeg" />
+            <h4 class="reviewContent">
+              Este shooter ultrarrealista es tan implacable que incluso tus SWAT
+              pueden acabar con depresión. Análisis de Ready or Not, el juego de
+              acción táctica que tienes que probar
+            </h4>
+            <p class="Game">READY OR NOT</p>
+            <ul class="subText">
+              <li>Hace 5 meses</li>
+              <li>Alberto Lloria</li>
+              <li>11 comentarios</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="parte2" id="parte2">
+        <h2>Noticias</h2>
+        <div class="cards">
+          <div class="card">
+            <img src="img/reddead.jpeg" />
+            <div class="cardcontent">
+              <p class="cardtitle">
+                Se espera una pronta salida de un nuevo juego de la exitosa saga
+                RDR
+              </p>
+              <p class="cardtext">
+                "Espero que anuncien Red Dead Redemption 3". Después de GTA 6,
+                el expresidente de Blizzard ya está deseoso de una nueva entrega
+                del western de Rockstar
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="img/jett.jpeg" />
+            <div class="cardcontent">
+              <p class="cardtitle">
+                Riot Games toma medidas para eliminar a los jugadores tóxicos de
+                una vez por todas
+              </p>
+              <p class="cardtext">
+                Los desarrolladores de Valorant le han abierto la puerta a los
+                baneos de hardware para los usuarios con peor comportamiento
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="img/Minecraft.jpeg" />
+            <div class="cardcontent">
+              <p class="cardtitle">
+                Minecraft anuncia una serie animada para Netflix que mostrará su
+                mundo abierto "bajo una nueva luz"
+              </p>
+              <p class="cardtext">
+                Aunque los detalles del proyecto son escasos, ya se ha
+                confirmado que será WildBrain (Sonic Prime) quien se encargará
+                de la animación
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="img/hill.jpeg" />
+            <div class="cardcontent">
+              <p class="cardtitle">
+                Konami anuncia un evento de Silent Hill para esta semana. Fecha,
+                hora y dónde ver el streaming
+              </p>
+              <p class="cardtext">
+                La gigante japonesa nos obligará a trasnochar para ver las
+                novedades de sus juegos y la nueva película
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="img/elden.webp" />
+            <div class="cardcontent">
+              <p class="cardtitle">
+                ¿Será muy difícil el DLC de Elden Ring? Miyazaki habla sobre la
+                dificultad
+              </p>
+              <p class="cardtext">
+                FromSoftware y Bandai Namco se preparan para lanzar Elden Ring:
+                Shadow of the Erdtree dentro de muy poco. Hidetaka Miyazaki,
+                habla sobre la dificultad de esta expansión.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="videos">
+          <iframe
+            src="https://www.youtube.com/embed/N9xKW95HM1s?si=R8o7VcSW9mHHs9Z_&amp;controls=0"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          <iframe
+            src="https://www.youtube.com/embed/fBj10LLBhBo?si=5LyyLZ9BU1jaeCs6&amp;controls=0"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          <iframe
+            src="https://www.youtube.com/embed/boxHuH7INdg?si=ASvP8OOaojRadXc7&amp;controls=0"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+
+      <section class="parte3" id="parte3">
+        <div class="community">
+          <h2>Únete a la diversión.</h2>
+          <p>
+            ¡ Recibe nuestro periodico semanal para estar informado de todo el
+            mundo gamer !
+          </p>
+          <br />
+          <label>
+            <input
+              type="email"
+              id="email"
+              class="email"
+              placeholder="Enter your email..."
+            />
+            <button class="button2">
+              <span class="button2-content">Suscribirse</span>
+            </button>
+          </label>
+          <p style="font-size: 11px">
+            Suscribiéndote aceptas nuestra política de privacidad
+          </p>
+
+          <div class="pageContent">
+            <h3>En GameING hablamos de:</h3>
+            <ul class="content">
+              <li>Fifa 23</li>
+              <li>GTA VI</li>
+              <li>Red dead redemption</li>
+              <li>Valorant</li>
+              <li>Minecraft</li>
+              <li>CSGO 2</li>
+              <li>Baldurs Gate 3</li>
+              <li>Proyect Zomboid</li>
+              <li>Elder Ring</li>
+              <li>Pokemon</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div>
+        <label class="section_footer">ABOUT US</label>
+      </div>
+
+      <ul>
+        <li><img class="icon1" src="iconos/facebook-3-2.svg" /></li>
+        <li><img class="icon1" src="iconos/instagram-2016-5.svg" /></li>
+        <li><img class="icon1" src="iconos/youtube-icon-5.svg" /></li>
+        <li><img class="icon1" src="iconos/discord-6.svg" /></li>
+      </ul>
+
+      <p class="cc">&copy; 2024 All rights reserved.</p>
+    </footer>
+    <script>
+      function mostrarDiv() {
+        const div = document.getElementById("mi-div");
+        div.style.display = div.style.display === "none" ? "block" : "none";
+      }
+    </script>
+  </body>
+</html>
